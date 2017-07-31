@@ -1,0 +1,81 @@
+var express = require('express');
+var router = express.Router();
+
+/* GET users listing. */
+router.get('/', function (req, res, next) {
+    res.send('respond with a resource');
+});
+
+
+router.post('/', function (req, res, next) {
+
+    var data = req.body;
+    /* console.log(data);
+     res.json(data);
+     res.end('/vote接口响应');*/
+
+    //如果没有vote数据口,会自动创建一个。如果有,就继续。
+    var db = require('mongoskin').db('mongodb://localhost:27017/voteDB');
+
+    var data = req.body;
+    //绑定到user,然后对他进行操作。
+    db.bind('votes');
+    data._id = data.openid;
+    //往votes集合添加info
+    db.votes.insert(data, function (err) {
+        if (err) {
+            res.json({msg: '投票失败', code: 2})
+        } else {
+            res.json({msg: '投票成功', code: 1});
+             
+        }
+
+    });
+})
+router.post('/isVote', function (req, res, next) {
+    var db = require('mongoskin').db('mongodb://localhost:27017/voteDB');
+
+    var data = req.body;
+    //绑定到user,然后对他进行操作。
+    db.bind('votes');
+
+    //往votes集合添加info
+    //foundData:是查询的结果。如果查到就有值,如果没查到就是null。
+    console.log(data);
+    db.votes.findOne(data, function (err, foundData) {
+
+        //foundData存在说明已经投过票。
+        if (foundData) {
+            res.json({msg: '已投票', code: 1})
+        } else {
+            res.json({msg: '未投票', code: 2})
+        }
+    });
+})
+
+router.all('/result', function (req, res, next) {
+
+    var db = require('mongoskin').db('mongodb://localhost:27017/voteDB');
+
+    var data = req.body;
+    //绑定到user,然后对他进行操作。
+    db.bind('votes');
+
+    //往votes集合添加info
+    //foundData:是查询的结果。如果查到就有值,如果没查到就是null。
+
+    db.votes.find().toArray(function (err, items) {
+        console.log(users);
+        var result = {};
+        items.forEach(function (item) {
+            var data = JSON.parse(item.data);
+            result[data[0].name] = result[data[0].name] || {scores: 0};
+            result[data[0].name].scores += data[0].score;
+
+            result[data[1].name] = result[data[1].name] || {scores: 0};
+            result[data[1].name].scores += data[1].score;
+        })
+    });
+
+})
+module.exports = router;

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="row">
+        <div class="center-block text-center" style="width: 250px">
+            <br>
+            <h1>Hello World!</h1>
+            <br>
+            <form action="http://localhost:3000/login">
+                <div class="form-inline form-group">
+                    <label>用户名:</label>
+                    <input placeholder="请输入用户名!" name="userName" type="text" class="form-control">
+                </div>
+                <div class="form-inline form-group">
+                    <label>密&nbsp;&nbsp;&nbsp;码:</label>
+                    <input placeholder="请输入密码!" name="passWord" type="password" class="form-control">
+                </div>
+                <div class="col-xs-6">
+                    <button class="btn btn-default" type="button" id="registerBtn">注册</button>
+                </div>
+                <div class="col-xs-6">
+                    <button class="btn btn-default" type="submit">登录</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+    (function () {
+        var registerBtn = document.querySelector('#registerBtn');
+        registerBtn.onclick = function () {
+            window.open('index_注册.html')
+        };
+    })();
+</script>

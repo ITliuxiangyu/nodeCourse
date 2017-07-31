@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/underscore/underscore.js"></script>
+    <script src="../node_modules/backbone/backbone.js"></script>
+
+</head>
+<body>
+<div id="app">
+
+</div>
+
+<!--定义模板-->
+<script type="text/template" id="person-tpl">
+
+    <img style="width:200px;height:200px;" src="<%= avatar=>"/>
+    <div style="width:550px;display:inline-block">
+        <p><%= name %></p>
+        <p><%= integral %></p>
+    </div>
+
+</script>
+<script>
+
+
+    /***
+     *
+     * resetful
+     *
+     * url:/man/1
+     * fetch: get /man/1
+     *
+     * save: 有变化会调put
+     *      如果新增的:post
+     *
+     *destory:Delete方法。
+     * @type {void|*}
+     */
+
+var Man =    Backbone.Model.extend({
+    initialize:function(){
+        console.log('你创造一个Man的数据模型');
+        this.bind("change:name",function(){
+            var name = this.get("name");
+            alert("你改变了 name 属性为:" + name);
+        });
+        this.bind("invalid",function(model,error){
+
+            alert(error);
+        });
+    },
+    url:'http://localhost:9000/man/1',
+    aboutMe: function(){
+        return '我叫' + this.get('name') + ',今年' + this.get('age') + '岁';
+    },
+    validate:function(attributes){
+        if(this.attributes.name == '') {
+            return "name 不能为空!";
+        }
+    }
+});
+
+
+var man = new Man()
+//获取man的数据
+man.fetch();
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

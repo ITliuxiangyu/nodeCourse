@@ -1,0 +1,10 @@
+<ul>
+    <% _.each(joins,function(join,i){ %>
+    <li class="comment">
+       <img src="<%= join.picUrl%>" />
+        <div><%=join.name%></div>
+        <div><%=join.address%></div>
+        <div><%=join.phone%></div>
+    </li>
+    <% })%>
+</ul>

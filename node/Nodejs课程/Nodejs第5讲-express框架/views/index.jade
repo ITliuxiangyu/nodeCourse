@@ -1,0 +1,43 @@
+//
+   Created by qingyun on 16/10/30.
+doctype html
+html
+    title= title
+    head
+    body
+        span= message
+        div(style="width:300px;height:300px;background-color:red")
+        - var array = [1,2,3]
+        //循环
+        ul
+            - for (var i = 0; i < array.length; ++i)
+              li hello #{array[i]}
+        //条件语句
+        if (5 > 10)
+            button 5
+        else
+            button 10
+        //类似switch的语句
+        case title
+            when "哈哈"
+                span= title
+            when "hello"
+                span= message
+            default
+                span 没有找到对应的内容
+        //遍历
+        ul
+            each val, index in ['zero', 'one', 'two']
+                li= index + ': ' + val
+        //while循环
+        - var n = 0
+        ul
+            while n < 4
+                li= n++
+        //混合宏 类似构造函数 ...代表不确定多少的参数
+        mixin pet(name,...items)
+            li.pet= name
+        ul
+            +pet('cat')
+            +pet('dog')
+            +pet('pig')

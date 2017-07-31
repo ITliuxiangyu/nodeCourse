@@ -1,0 +1,44 @@
+doctype html
+html
+    head
+        title= name
+        style div.a{width: 100px; height: 100px; background: red;}
+    body
+        span= age
+        span= gender
+        div(style="width: 200px; height: 200px; border: 2px solid black;")
+        div.a
+        ul
+            li
+                span 百度
+            li
+                span google
+            li
+                span taobao
+
+        - var arr = ["香蕉", "菠萝", "哈密瓜"]
+        ul
+            - for (var i = 0; i < arr.length; i++)
+                li hello #{arr[i]}
+
+
+        if (5 > 10)
+            button 5
+        else
+            button 10
+
+        case age
+            when 18
+                span= name
+            when 20
+                sapn 哈哈
+            default
+                span 呵呵
+
+
+        ul
+            each val, index in [1, 2, 3, 4, 5]
+                li= index + ": " + val
+
+
+

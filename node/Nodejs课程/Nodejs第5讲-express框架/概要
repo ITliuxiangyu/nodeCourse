@@ -1,0 +1,17 @@
+1.为什么要学习express
+ .http://www.expressjs.com.cn/
+ .讲解真正项目的创建 使用npm init初始化自己的项目 使用命令在项目下安装express
+ .首先使用路由管理对比express和原生 再次讲解http的构成 路由
+ .写http根据pathname路由访问接口的demo
+ .然后使用express写管理路由的demo
+
+2.使用文件读取对比express静态文件管理
+ .写原生访问静态文件的demo 讲解缺陷 没有文件会崩溃
+3.创建和使用路由模板
+4.中间件
+5.jade和ejs模板
+6.express项目结构
+
+输入命令创建一个名为"microblog"的空项目，-e参数代表使用的ejs模板，如果想用jade的话请使用-t
+express -e microblog
+DEBUG=myExpress:* npm start

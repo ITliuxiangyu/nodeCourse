@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/underscore/underscore.js"></script>
+    <script src="node_modules/backbone/backbone.js"></script>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="js/models/personModel.js"></script>
+
+</head>
+<body>
+
+
+<!--定义模板-->
+<script type="text/template" id="person-tpl">
+
+    <img style="width:200px;height:200px;" src="<%= avatar %>"/>
+    <div style="width:550px; float: right;">
+        <p><%= name %></p>
+        <p><%= integral %></p>
+    </div>
+
+</script>
+
+<script type="text/template" id="home-tpl">
+
+    <%_.each(items,function(item,i){%>
+    <li> <%= item.name %></li>
+    <%})%>
+
+</script>
+<script type="text/template" id="app-tpl">
+
+    <div>
+        <!--视图容器-->
+        <div id="app"></div>
+        <ul class="nav-bar">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#home">积分商城</a></li>
+            <li><a href="#home">加盟店</a></li>
+            <li><a href="#person">个人中心</a></li>
+
+        </ul>
+    </div>
+</script>
+<script src="js/models/personModel.js"></script>
+<script src="js/views/person.js"></script>
+<script src="js/views/Home.js"></script>
+<script src="js/views/App.js"></script>
+<script src="js/routers/router.js"></script>
+
+<script>
+
+
+    /*var personView = new PersonView();
+     personView.render();
+     $('#app').html(personView.el);*/
+</script>
+</body>
+</html>

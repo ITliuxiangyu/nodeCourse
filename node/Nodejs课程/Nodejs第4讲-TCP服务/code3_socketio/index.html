@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聊天室</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        input {
+            padding: 10px;
+            width: 90%;
+            position: absolute;
+            bottom: 10px;
+            margin-right: .5%;
+        }
+        button {
+            width: 9%;
+            background: rgb(130, 224, 255);
+            border: none;
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            padding: 10px;
+        }
+        #messages {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        #messages li {
+            padding: 5px 10px;
+        }
+        #messages li:nth-child(odd) {
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <ul id="messages"></ul>
+    <input id="messageInput" placeholder="请输入要发送的消息">
+    <button id="sendMessageBtn">发送</button>
+
+</body>
+</html>
+<script src="//cdn.bootcss.com/socket.io/1.5.1/socket.io.min.js"></script>
+<script>
+    var socket = io.connect('http://localhost:3000');
+    // 当服务端发送一条消息到客户端，chatMessage 事件即被触发。我们把消息在控制台打印出来
+    var sendMessageBtn = document.querySelector('#sendMessageBtn');
+    var messageInput = document.querySelector('#messageInput');
+    var messagesUl = document.querySelector('#messages');
+    sendMessageBtn.onclick = function(){
+        socket.emit('chatMessage', messageInput.value);
+        messageInput.value = '';
+        return false;
+    };
+    socket.on('chatMessage', function(msg){
+        var li = document.createElement('li');
+        li.innerText = msg;
+        messagesUl.appendChild(li);
+    });
+</script>

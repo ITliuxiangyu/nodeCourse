@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<body>
+<!---
+data-main:系统的启动js文件,也就是入口文件。
+data-main:如果不配置baseUrl:那么baseUrl的路径就是data-main的路径
+现在baseUrl=js/
+
+text:插件
+    可以把html当做模块动态插入。
+    引入的写法是:
+    text!模板路径
+
+css:插件:
+        可以吧css当做模块动态加载。
+        写法是:
+        css!css模块路径
+-->
+
+
+
+<script src="node_modules/requirejs/require.js" data-main="js/story.js"></script>
+
+<script>
+    //require 的配置项
+    require.config({
+        //配置路径映射。
+        paths: {
+            //见到text自动变成 lib/text/text
+            text: 'lib/text/text',
+            css:'../node_modules/require-css/css',
+            //遇到style转成../css
+            style:'../css',
+        }
+    })
+</script>
+</body>
+</html>

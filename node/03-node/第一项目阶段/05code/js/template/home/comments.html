@@ -1,0 +1,9 @@
+<% _.each(comments,function(comment,i){ %>
+<li class="comment">
+    <div class="comment-header"><img class="avatar" src="<%= comment.avatar%>"/><span class="name"><%= comment.name%></span></div>
+    <div class="comment-body">
+        <p class="content"><%= comment.content%></p>
+        <p><% comment.timestamp %></p>
+    </div>
+</li>
+<% })%>

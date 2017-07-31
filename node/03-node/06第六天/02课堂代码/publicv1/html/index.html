@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>投票</title>
+    <link rel="stylesheet" href="../stylesheets/vote1.css">
+    <script src="../javascripts/vote.js"></script>
+    <script src="../javascripts/jquery.js"></script>
+
+
+</head>
+<body>
+<div id="main">
+    <div class="img">
+        <img src="../images/00.png"/>
+        <h1>优秀作品投票</h1>
+        <p>请选择您认为本期1606班最优秀的</p>
+    </div>
+
+    <div id="first" class="vote-items">
+
+        <div class="d1 vote-item">
+            <img src="../images/01.jpg"/>
+            <span class="span1">张迅</span>
+        </div>
+
+        <div class="d1 vote-item">
+            <img src="../images/01.jpg"/>
+            <span class="span1">王盟</span>
+        </div>
+
+        <div class="d1 vote-item">
+            <img src="../images/01.jpg"/>
+            <span class="span1">李永杰</span>
+        </div>
+
+        <div class="d1 vote-item">
+            <img src="../images/01.jpg"/>
+            <span class="span1">王西浩</span>
+        </div>
+
+        <div class="d1 vote-item">
+            <img src="../images/01.jpg"/>
+            <span class="span1">郑向磊</span>
+        </div>
+
+        <input type="button" value="为优秀作品点赞点赞" id="tijiao">
+    </div>
+
+</div>
+</body>
+<script>
+    var count = 0;
+    var span1 = $('<span>第一名  <font style="color: red;">×</font>  </span>');
+    var span2 = $('<span>第二名 <font style="color: red;">×</font>  </span>');
+    var a = $('span>font');
+    console.log(a);
+
+    span1.addClass('spann1')
+    span2.addClass('spann2')
+
+
+    /*
+     $('#first>.d1').on('click', function () {
+     debugger;
+     count++;
+     if (count == 1) {
+     $(this).append(span1);
+     $(this).css({backgroundColor: 'rgb(172,172,172)'});
+
+     } else if (count == 2) {
+     $(this).append(span2);
+     $(this).css({backgroundColor: 'rgb(172,172,172)'});
+     } else if (count == 3) {
+     //      unbind('click')
+
+     }
+     //        $(this).unbind('click');
+     });
+     */
+
+    function createSpan(idx) {
+        var span = $('<span class="pos"><span>第' + idx + '名 </span> <font style="color: red;">×</font>  </span>');
+        return span;
+    }
+
+
+    var pos = 0;
+    //使用事件代理(委托)的方式
+    $('.vote-items').on('click', '.vote-item', function () {
+
+        //如果已选中
+        if ($(this).hasClass('checked')) {
+            var postEle = $(this).find('.pos');
+            var num = postEle.text();
+            num = /\d+/.exec(num)
+
+            $(this).removeClass('checked').find('.pos').remove();
+            --pos;
+
+            if (num == 1) {
+                $(this).siblings('.checked').find('.pos').find('span').text('第1名');
+            }
+            //当删除的时候,处理一下。
+            /**
+             判断如果是第一名:
+             找到第二名,名次加一。
+             * */
+
+
+        }
+        else {
+            if (pos >= 2) {
+                return;
+            }
+            ++pos;
+            console.log(this);
+            //createSpan(pos);
+            $(this).addClass('checked').append(createSpan(pos));
+        }
+    })
+
+
+    //var url = 'http://3g.163.com/touch/jsonp/sy/recommend/140-10.html?hasad=1&loc=%E6%B2%B3%E5%8D%97%E7%9C%81_%E9%83%91%E5%B7%9E%E5%B8%82&miss=10&refresh=A&offset=0&size=10&callback=syrec14';
+    //投票结果
+    //var url = 'http://192.168.8.81:9000/vote/';
+    //投票
+    //var url = 'http://localhost:8000/vote';
+    $('body').click(function () {
+        $.ajax({
+            //url: '/vote/result',
+            url: '/vote',
+            //url: '/vote/isVote',
+            method:'post',
+            data: {
+                openid: 5,
+                data: JSON.stringify([
+                    {id:0,name: '张三', score: 2},
+                    {id:1,name: '李四', score: 1}
+                ])
+            },
+
+            dataType: 'jsonp',
+            success: function (e) {
+                console.log(e);
+            }
+        })
+    })
+
+
+    $('.btn').click(function(){
+
+    })
+
+</script>
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <button>更新</button>
+    </body>
+</html>
+<script src="jquery.js"></script>
+<script>
+
+    $('button').click(function () {
+
+        $.ajax({
+            url: "http://localhost:3000/update",
+            type: "POST",
+            data: {
+                query: {name: "小刚", age: 30},
+                update: {$set: {name: "小黑", age: 200}}
+            },
+            success: function (r) {
+                console.log(r);
+            },
+            error: function (e) {
+                console.log(e);
+            }
+
+        });
+
+    });
+
+
+
+
+</script>

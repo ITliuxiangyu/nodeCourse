@@ -1,0 +1,1 @@
+functiona1(a,b){console.log('a');}functionb1(){console.log('b');}

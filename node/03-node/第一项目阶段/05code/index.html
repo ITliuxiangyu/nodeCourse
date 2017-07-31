@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,maximum-scale=0.5,minimum-scale=0.5,user-scalable=no"/>
+
+</head>
+<body>
+<div class="app" style="width: 100px; height: 100px; background-color: red;">
+
+</div>
+
+<!--引入require.js文件,然后加载app.js文件。-->
+<!--<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+<script src="jquery.min.js"></script>
+<script src="node_modules/requirejs/require.js" data-main="js/app.js"></script>
+<script>
+    require.config({
+        baseUrl: "./js",
+        paths: {
+            'text':'../node_modules/text/text',
+            'css':'../node_modules/require-css/css',
+            'style':'../css',
+            "jquery": "../node_modules/jquery/dist/jquery",
+            "carousel": "../node_modules/slick-carousel/slick/slick",
+            "carouselCss": "../node_modules/slick-carousel/slick/slick",
+            "carouselThemeCss": "../node_modules/slick-carousel/slick/slick-theme",
+            "underscore": "../node_modules/underscore/underscore",
+            "backbone": "../node_modules/backbone/backbone",
+        },/*,
+        map: {
+            '*': {
+                'css': 'require-css/css' // or whatever the path to require-css is
+            }
+        },*/
+        waitSeconds: 15
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+一个客户端
+    http.get(url,callback)
+      url:请求的地址
+      callback(response)
+        response:服务器对客户端的响应
+            data,end事件拿到服务器响应的数据。
+
+一个服务器
+    http.createServer(callback)
+        callback(reponse,request):
+            response:对客户端的响应对象
+                statusCode --设置状态码
+                setHeader--设置头
+                end,write --操作响应体
+
+
+            request:客户端到服务器的请求对象。
+                url --客户端请求的地址(请求行)
+                headers --客户端请求的头(请求头)
+                on(data|end) 事件拿到到请求体的内容(请求体)
+
+
+----------
+01:静态服务器
+02:代理服务器
+用法,和写法 理解一下。
+03:预习一下express(node的封装框架)。
+

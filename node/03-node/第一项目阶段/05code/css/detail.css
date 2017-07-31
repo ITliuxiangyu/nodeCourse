@@ -1,0 +1,203 @@
+.shop-detail {
+    background-color: #eeeeee;
+}
+
+.info-header {
+    padding-left: 25px;
+    padding-bottom: 30px;
+}
+
+.info-header .name {
+    color: #666;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.info-header .title {
+    color: #333;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.info-header .price {
+    color: #e80516;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.info-header .srcPrice {
+    color: #666;
+    font-size: 18px;
+
+    text-decoration: line-through;
+}
+
+.size .arrow{
+    font-size:30px;
+    float:right;
+    margin-top:19px;
+
+}
+.info-header .fs {
+    color: #666;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.shop-detail .size {
+    padding: 0  24px 0 20px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 24px;
+    color: #333;
+    background: #fff;
+    margin-bottom: 20px;
+}
+.info-body a{
+    color:#666;
+    text-decoration: none;
+}
+
+.info-body .bars {
+    overflow: hidden;
+}
+
+.info-body .bars li {
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
+    width: 248px;
+    border: 1px solid #dfdfdf;
+    float: left;
+    font-size: 24px;
+    color: #666;
+    background: #fff;
+}
+
+.infoContainer{
+    padding: 0 22px;
+    background: #fff;
+}
+.infoContainer .comment {
+    list-style: none;
+}
+
+.infoContainer .comment-header {
+    height: 140px;
+    line-height: 140px;
+    background: #fff;
+}
+.infoContainer .comment-body {
+    background: #eee;
+}
+
+.comment .avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.comment .name {
+    color: #333;
+    font-size: 24px;
+}
+
+.comment .content {
+    color: #666;
+    font-size: 24px;
+    line-height: 64px;
+}
+
+.action-bars{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    white-space: nowrap;
+    text-align:center;
+    font-size:22px;
+    border-top:1px solid #d3d2d2;
+    overflow: hidden;
+}
+.action-bars .bar-s{
+    height:100px;
+    line-height:100px;
+    width:160px;
+    float:left;
+}
+
+.action-bars .bar-m{
+    height:100px;
+    line-height:100px;
+    width:215px;
+    float:left;
+}
+
+.action-bars .bar-s.ordinary{
+    background: #fff;
+    color:#6a6a6a;
+}
+
+.action-bars .bar-m.primary{
+    background: #f27f88;
+}
+.action-bars .bar-m.primary2{
+    background: #e60012;
+    color:#fff;
+}
+
+.increment-dialog{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display: none;
+}
+.increment-dialog .increment{
+    /*height:280px;*/
+    background: #fff;
+
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    color:#666;
+}
+.increment-dialog .shadow{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#a6a6a6;
+    opacity: .4;
+}
+.increment .shop-pic{
+    width:290px;
+    height:150px;
+
+}
+
+.increment .info-header{
+    margin:35px 45px 18px;
+}
+
+.increment .info{
+    display:inline-block;
+    margin-left:80px;
+    vertical-align: top;
+}
+
+.increment .name{
+    font-size:24px;
+}
+.increment .price{
+    font-size:28px;
+    color:#e80516;
+}
+
+.increment .action-bar{
+    overflow: hidden;
+}

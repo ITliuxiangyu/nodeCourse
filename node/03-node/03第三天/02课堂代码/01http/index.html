@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="a.css">
+    <script src="main.js"></script>
+
+</head>
+<body>
+这是我的第一个服务器
+<img src="a.jpg"/>
+
+<script>
+    document.body.onclick = function() {
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST','/list');
+        xhr.send('name=zs&pwd=zs');
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == xhr.DONE) {
+                console.log(xhr.response);
+            }
+        }
+    }
+</script>
+</body>
+</html>

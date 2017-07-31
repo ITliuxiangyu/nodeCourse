@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="a.css">
+    <script src="main.js"></script>
+
+</head>
+<body>
+这是我的第一个服务器
+<a href="./main.html">main</a>
+<img src="a.jpg"/>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script>
+    /**
+     jsonp:利用script标签可以跨域来解决跨域问题。
+     * */
+    //var url = 'http://image.baidu.com/search/acjson?tn=resultjson_com&ipn=rj&ct=201326592&is=&fp=result&queryWord=%E5%A3%81%E7%BA%B8&cl=2&lm=-1&ie=utf-8&oe=utf-8&adpicid=&st=-1&z=0&ic=0&word=%E5%A3%81%E7%BA%B8&s=0&se=&tab=&width=&height=&face=0&istype=2&qc=&nc=1&fr=&cg=wallpaper&pn=90&rn=30&gsm=5a&1479802036832=';
+
+    var url = 'http://3g.163.com/touch/jsonp/sy/recommend/140-10.html?hasad=1&loc=%E6%B2%B3%E5%8D%97%E7%9C%81_%E9%83%91%E5%B7%9E%E5%B8%82&miss=10&refresh=A&offset=0&size=10&callback=syrec14';
+    document.body.onclick = function() {
+        $.ajax({
+            url: 'http://localhost:8888/list',
+            data:{
+              url:url
+            },
+            dataType: 'jsonp',
+            success: function (e) {
+                console.log(e);
+            }
+        })
+    }
+
+
+
+   /* function cb(data){
+        console.log('服务器返回的数据'+data);
+    }
+    document.body.onclick = function() {
+        /!**
+         * src是脚本的地址
+         * fn是服务器返回的数据
+         *
+         * 服务器返回的是这样的内容:
+         *      cb({name:'zs'})
+         * @param src
+         * @param fn
+         *!/
+        function jsonp(src, fn) {
+
+            var script = document.createElement('script');
+            script.src = src;
+
+            script.onload = function () {
+                console.log('数据请求完成');
+
+            }
+            document.body.appendChild(script);
+        }
+
+        jsonp('http://localhost:8888/list');
+    }*/
+</script>
+</body>
+</html>

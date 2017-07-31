@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ejs</title>
+</head>
+<body>
+    <%= title %>
+    <%= message %>
+
+    <% var names = [1,2,3] %>
+    <% if (names.length) { %>
+    <ul>
+        <% names.forEach(function(name){ %>
+        <li><%= name %></li>
+        <% }) %>
+    </ul>
+    <% } %>
+
+    <% var nameArray = ['宇翔','圣塬','小铭','万栋','莹莹','东勋','镇辞']; %>
+    <% for (var i = 0;i < nameArray.length;i++){%>
+        <div><%= nameArray[i]%></div>
+    <% } %>
+</body>
+</html>

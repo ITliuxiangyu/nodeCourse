@@ -1,0 +1,91 @@
+<div class="shop-detail">
+    <div class="nav-bar">
+        <span class="back">&lt;</span>
+        <span class="name"><%=name%></span>
+    </div>
+    <div>
+        <!--<div class="carousel"></div>-->
+        <section class="Carousel">
+
+        </section>
+        <div class="info-header">
+            <h1 class="name"><%= name %></h1>
+            <h2 class="title"><%= title %></h2>
+            <p class="price">
+                <strong><%= price %></strong>
+                <strong class="srcPrice">原价:<%= srcPrice %></strong>
+            </p>
+            <div class="fs">
+                <span class="freight">运费:<%= freight %></span>
+                <span class="sales">销量:<%= sales %></span>
+            </div>
+
+        </div>
+        <div class="size">
+            <span>数量:</span><span>1</span><i class="arrow icon-arrow"></i>
+        </div>
+        <div class="info-body">
+            <ul class="bars normal-color">
+                <li class="bar" data-href="detail" ><a data-type="detail" href="">商品详情</a></li>
+                <li class="bar" data-href="params"><a data-type="params" href="">商品参数</a></li>
+                <li class="bar" data-href="comments"><a data-type="comments" href="">评价</a></li>
+            </ul>
+            <div class="infoContainer">
+                <%= info.detail %>
+            </div>
+        </div>
+    </div>
+    <ul class="action-bars">
+        <li data-href="home" class="home bar-s ordinary">
+            <i class="text-icon icon-home_sign"></i>
+            <a class="text-icon-name">首页</a>
+        </li>
+        <li data-href="car" class="cart bar-s ordinary">
+            <i class="text-icon icon-buy-car"></i>
+            <a class="text-icon-name">购物车</a>
+            </li>
+        <li  class="add bar-m primary">
+            <a >加入购物车</a>
+        </li>
+        <li class="buy bar-m primary2">
+            <a >立即购买</a>
+        </li>
+    </ul>
+
+    <div class="increment-dialog">
+    <div class="shadow"></div>
+    <ul class="increment">
+
+        <div class="info-header">
+            <img class="shop-pic" src="<%= carousel[1].picUrl%>"/>
+            <div class="info">
+                <div class="name"><%=name%></div>
+                <div class="price"><%= price%></div>
+                <div class="store">
+                    <span>库存:<%= store+unit%></span>
+                    <span>数量:<%= name %></span>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="action-bar">
+            <span>数量</span>
+            <div class="increment-bar">
+                <span class="btn">-</span>
+                <input type="text" class="input-size"  value="<%=size%>"/>
+                <span class="btn">+</span>
+            </div>
+        </div>
+        <ul>
+            <li class="col-5 bar tip">加入购物车</li>
+            <li class="col-5 bar primary">立即购买</li>
+        </ul>
+    </ul>
+    </div>
+    <div class="chat-icon">
+        <i class="icon icon-chat"></i>
+        <span class="icon-txt">客服</span>
+    </div>
+</div>
+

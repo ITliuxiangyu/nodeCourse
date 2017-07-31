@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ejs</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        ejs
+        <div></div>
+        <h2><%= name%></h2>
+        <p><%= age%></p>
+        <p><%= gender%></p>
+        <%- tag%>
+        <p>888</p>
+        <!--
+            =号原样显示
+        -->
+        <%= tag%>
+
+        <!-- 代码写在这里 -->
+        <% var names = ["菠萝", "黄瓜", "榴莲", "黄鳝"] %>
+        <% if (names.length) { %>
+
+            <ul>
+                <% names.forEach(function (val, index) { %>
+                    <li><%= val %></li>
+                <% }) %>
+            </ul>
+
+        <% } %>
+    </body>
+</html>

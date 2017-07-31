@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/underscore/underscore.js"></script>
+    <script src="../node_modules/backbone/backbone.js"></script>
+
+</head>
+<body>
+<div id="app">
+
+</div>
+
+<!--定义模板-->
+<script type="text/template" id="person-tpl">
+
+    <img style="width:200px;height:200px;" src="<%= avatar=>"/>
+    <div style="width:550px;display:inline-block">
+        <p><%= name %></p>
+        <p><%= integral %></p>
+    </div>
+
+</script>
+<script>
+    var AppRouter = Backbone.Router.extend({
+        routes: {
+            ":route": "loadView",
+            "download/*path": "downloadFile",
+            //带参数的路由
+            "posts/:id":'getPost',
+            //处理所有的路由
+            "*a": "defaultRoute"
+        },
+        loadView:function(view){
+
+            console.log('load view ----');
+            console.log(view)
+        },
+        downloadFile:function(path){
+          console.log('download file----');
+          console.log(path);
+        },
+        getPost:function(id){
+            console.log('getPost-----')
+            console.log(id)
+            console.log(arguments)
+        },
+        defaultRoute: function (a) {
+            //如果没匹配路由,走这里
+            console.log('默认路由-----')
+            console.log(actions);
+        }
+    });
+
+    //实例化一个路由
+    var app_router = new AppRouter();
+    //开始监听路由变化,并且处理路由变化
+    Backbone.history.start();
+
+
+</script>
+</body>
+</html>

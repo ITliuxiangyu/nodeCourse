@@ -1,0 +1,24 @@
+<div class="shop-car">
+    <div class="nav-bar">
+        <span class="back">&lt;</span>
+        <span class="name"><%=name%></span>
+    </div>
+    <div>
+        <ul>
+            <% _.each(joins,function(join,i){ %>
+            <li class="items">
+                <i class="icon-check radio"></i>
+                <img class="picUrl" src="<%= join.picUrl%>"/>
+                <div class="info">
+                    <p class="name"><%=join.name%></p>
+                    <p class="title"><%=join.title%></p>
+                    <p class="price"><%=join.price%>
+                        <span class="size">X<%=join.size%></span>
+                        <i class=" trash icon-trash"></i>
+                    </p>
+                </div>
+            </li>
+            <% })%>
+        </ul>
+    </div>
+</div>

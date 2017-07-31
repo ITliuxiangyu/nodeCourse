@@ -1,0 +1,30 @@
+#运行服务器
+#定位到mongod的bin文件夹
+    创建一个
+    //创建文件夹,数组存储的位置
+    mkdir /data
+    cd /data
+    mkdir db
+
+    然后:
+    在bin文件夹下面:
+    运行
+    sudo ./mongod
+
+
+
+
+
+#运行客户端
+    到bin文件夹下面:
+./mongo
+    进入命令行模式。
+
+
+
+数据库四大操作:CRUD(增删改查)
+
+    insert
+    remove
+    update
+    find

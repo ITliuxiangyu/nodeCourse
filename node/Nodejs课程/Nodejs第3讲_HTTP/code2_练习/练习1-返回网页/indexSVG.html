@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG动画</title>
+</head>
+<body>
+    <!--SVG是支持动画的-->
+    <!--animate动画必须写在作用动画的元素里面
+    animate有几个属性
+    attributeType代表动画的类型
+    attributeName为该类型具有的属性名称
+    begin动画开始的时间起止点
+    from to 表示该属性的开始和目的
+    dur 代表持续时间
+    repeatCount 表示循环动画次数 indefinite表示一直循环
+    -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.0">
+        <rect x="20" y="20" width="250" height="250" fill="red">
+            <animate attributeType="CSS" attributeName="opacity" begin="0s" from="1" to=".3" dur="3s" repeatCount="indefinite" ></animate>
+            <animate attributeName="x" attributeType="XML" begin="0s" dur="4s" fill="freeze" from="280" to="40"></animate>
+        </rect>
+    </svg>
+    <!--<animateColor>已经被废弃-->
+    <!--改变颜色动画-->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.0">
+        <rect x="0" y="0" width="250" height="250" fill="blue">
+            <animate attributeType="XML" attributeName="fill" begin="0s" from="blue" to="red" dur="3s" repeatCount="indefinite" ></animate>
+            <animate attributeName="x" attributeType="XML" begin="0s" dur="3s" from="200" to="0"></animate>
+            <animate attributeName="y" attributeType="XML" begin="0s" dur="3s" from="200" to="0"></animate>
+        </rect>
+    </svg>
+    <!--animateMotion使引用的元素沿着运动路径移动-->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" height="300px" width="300px">
+        <g>
+            <circle cx="65" cy="65" r="10">
+                <animateMotion path="M 65 65 A 65,65 0 1,0 60,60 Z" dur="3s" fill="freeze" repeatCount="indefinite"></animateMotion>
+            </circle>
+            <text x="76" y="70">我会动
+                <animateMotion path="M 65 65 A 65,65 0 1,0 60,60 Z" dur="3s" repeatCount="indefinite"></animateMotion>
+            </text>
+        </g>
+    </svg>
+    <!--animateTransform元素变动了目标元素上的一个变形属性，从而允许动画控制转换、缩放、旋转或斜切-->
+    <!--rotate为XML的 所以其三个属性第一个是角度 后两个的位置 这个与CSS3不同-->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" height="200px" width="200px" viewBox="0 0 150 150" style="background-color: red">
+        <g>
+            <text x="70" y="70" font-size="20px">我会转
+                <!--from="0 70 70" 0代表角度 70 70代表旋转基准点-->
+                <animateTransform attributeName="transform" attributeType="XML"  type="rotate" from="0 70 70" to="360 70 70" begin="0s" dur="3s" repeatCount="indefinite"></animateTransform>
+                <!--<animateTransform attributeName="transform" attributeType="XML" type="scale" from=".3" to="2" additive="sum" begin="0s" dur="3s" repeatCount="indefinite"></animateTransform>-->
+            </text>
+        </g>
+    </svg>
+
+</body>
+</html>

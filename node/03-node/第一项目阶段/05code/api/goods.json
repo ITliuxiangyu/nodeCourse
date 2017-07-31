@@ -1,0 +1,104 @@
+{
+  "pageNum":1,
+  "pageSize":20,
+
+  "result": {
+    "carousel":[
+      { "picUrl": "imgs/cuoural.png"},
+      { "picUrl": "imgs/pangxie.png"},
+      { "picUrl": "imgs/cuoural.png"}
+    ],
+    "items": [
+      {
+        "id":0,
+        "picUrl": "imgs/pangxie.png",
+        "name": "琥珀核桃仁",
+        "title": "健脑 降低胆固醇 益寿美容",
+        "price": "38",
+        "isSellout": false,
+        "unit": "件"
+      },
+      {
+        "id":1,
+        "picUrl": "imgs/pangxie.png",
+        "name": "琥珀核桃仁",
+        "title": "健脑 降低胆固醇 益寿美容",
+        "price": "12",
+        "isSellout": false,
+        "unit": "件"
+      },
+      {
+        "id":3,
+        "picUrl": "imgs/pangxie.png",
+        "name": "琥珀核桃仁",
+        "title": "健脑 降低胆固醇 益寿美容",
+        "price": "22",
+        "isSellout": false,
+        "unit": "套"
+      },
+      {
+        "id":4,
+        "picUrl": "imgs/pangxie.png",
+        "name": "琥珀核桃仁",
+        "title": "健脑 降低胆固醇 益寿美容",
+        "price": "38",
+        "isSellout": false,
+        "unit": "件"
+      },
+      {
+        "id":5,
+        "picUrl": "imgs/pangxie.png",
+        "name": "琥珀核桃仁",
+        "title": "健脑 降低胆固醇 益寿美容",
+        "price": "38",
+        "isSellout": false,
+        "unit": "件"
+      },
+      {
+        "id":6,
+        "picUrl": "imgs/pangxie.png",
+        "name": "琥珀核桃仁",
+        "title": "健脑 降低胆固醇 益寿美容",
+        "price": "38",
+        "isSellout": false,
+        "unit": "件"
+      },
+      {
+        "id":7,
+        "picUrl": "imgs/pangxie.png",
+        "name": "琥珀核桃仁",
+        "title": "健脑 降低胆固醇 益寿美容",
+        "price": "38",
+        "isSellout": false,
+        "unit": "件"
+      },
+      {
+        "id":8,
+        "picUrl": "imgs/pangxie.png",
+        "name": "琥珀核桃仁",
+        "title": "健脑 降低胆固醇 益寿美容",
+        "price": "38",
+        "isSellout": false,
+        "unit": "件"
+      },
+      {
+        "id":9,
+        "picUrl": "imgs/pangxie.png",
+        "name": "琥珀核桃仁",
+        "title": "健脑 降低胆固醇 益寿美容",
+        "price": "38",
+        "isSellout": false,
+        "unit": "件"
+      },
+      {
+        "id":10,
+        "picUrl": "imgs/pangxie.png",
+        "name": "琥珀核桃仁",
+        "title": "健脑 降低胆固醇 益寿美容",
+        "price": "38",
+        "isSellout": false,
+        "unit": "件"
+      }
+    ]
+  }
+}

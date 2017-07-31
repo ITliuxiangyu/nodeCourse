@@ -1,0 +1,11 @@
+{
+  "name": "1609class",
+  "version": "1.0.0",
+  "description": "1609 班发的包",
+  "main": "OurClass.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "1609",
+  "license": "ISC"
+}

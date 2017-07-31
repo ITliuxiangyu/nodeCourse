@@ -1,0 +1,16 @@
+{
+  "name": "waigetestpackagec",
+  "version": "1.0.0",
+  "description": "this is a very new bee de package",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "waige",
+    "new",
+    "bee"
+  ],
+  "author": "waige",
+  "license": "ISC"
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/underscore/underscore.js"></script>
+    <script src="../node_modules/backbone/backbone.js"></script>
+
+</head>
+<body>
+<div id="app">
+
+</div>
+
+<!--定义模板-->
+<script type="text/template" id="person-tpl">
+
+    <img style="width:200px;height:200px;" src="<%= avatar=>"/>
+    <div style="width:550px;display:inline-block">
+        <p><%= name %></p>
+        <p><%= integral %></p>
+    </div>
+
+</script>
+<script>
+
+    /***
+     *
+     * Backbone.View是视图的基类。
+     * newClass = Backbone.View.extend(obj)
+     * 作用是:创建一个新的视图类,它继承自 Backbone.View 这个基类。
+     * 并且,obj是这个类的新定义。
+     * @type {void|*}
+     */
+
+  var PersonView =  Backbone.View.extend({
+      aa:'1',
+       render:function(){
+           this.el.html('个人信息');
+       }
+   });
+
+    var personView = new PersonView();
+    console.log(personView)
+
+
+</script>
+</body>
+</html>

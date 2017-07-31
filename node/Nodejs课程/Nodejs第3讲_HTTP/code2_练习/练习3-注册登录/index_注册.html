@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <style>
+        #registerBtn{
+            width: 240px;
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+    <div class="center-block text-center" style="width: 300px">
+        <br>
+        <h1>注册</h1>
+        <br>
+        <form action="http://localhost:3000/register">
+            <div class="form-inline form-group">
+                <label>用&nbsp;户&nbsp;名&nbsp;:</label>
+                <input placeholder="请输入用户名!" name="userName" type="text" class="form-control">
+            </div>
+            <div class="form-inline form-group">
+                <label>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;:</label>
+                <input placeholder="请输入密码!" name="passWord" type="password" class="form-control">
+            </div>
+            <div class="form-inline form-group">
+                <label>电话号码&nbsp;:</label>
+                <input placeholder="请输入密码!" name="phone" type="password" class="form-control">
+            </div>
+            <br>
+            <div>
+                <button class="btn btn-default" id="registerBtn">确认注册</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+</body>
+</html>

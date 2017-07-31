@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax发送get请求</title>
+</head>
+<body>
+    <button id="ajaxBtn">ajax发送get请求</button>
+</body>
+</html>
+<script src="jquery.min.js"></script>
+<script>
+    (function () {
+        var ajaxBtn = document.querySelector('#ajaxBtn');
+        ajaxBtn.onclick = function () {
+            $.ajax({
+                url:'http://localhost:3000/?name=zaq',
+                method:'GET',
+                timeout:20000,
+                dataType:'json',
+                success:function (result) {
+                    console.log(result + '成功');
+                },
+                error:function (err) {
+                    console.log(err + '错误');
+                }
+            })
+        }
+    })();
+</script>

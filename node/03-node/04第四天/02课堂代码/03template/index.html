@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="container">
+
+</ul>
+<script>
+    /*
+
+    模板引擎:
+     就是定义一系列特殊规则:
+     {varibaleName}--这个是变量。
+
+     引擎取匹配规则,替换数据,生成内容。
+    *
+    * **/
+    var data = [{name:'zs'},{name:'ls'},{name:'ww'}];
+    var template = `<li>{name}</li>`
+    var html ='';
+    for(var i in data){
+        var temp = template.replace(/\{.*?\}/,data[i].name);
+        html += temp
+    }
+    document.querySelector('#container').innerHTML = html;
+</script>
+</body>
+</html>

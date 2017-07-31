@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a2cffd90-7d54-4454-9c1f-b702aa9848d7" name="Default" comment="" />
+    <ignored path="backbone.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="backbone" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/01.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/ampersand/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/angular-dart/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/angular2/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/angularjs/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/angularjs_require/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/ariatemplates/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/atmajs/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/backbone/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/backbone_marionette/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/backbone_require/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/binding-scala/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/canjs/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/canjs_require/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/chaplin-brunch/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/closure/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/dijon/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/dojo/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/elm/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/enyo_backbone/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/exoskeleton/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/extjs_deftjs/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/firebase-angular/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/flight/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/foam/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/gwt/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/humble/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/jquery/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/js_of_ocaml/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/jsblocks/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/knockback/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/knockoutjs/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/knockoutjs_require/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/lavaca_require/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/mithril/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/olives/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/puremvc/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/ractive/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/rappidjs/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/react-alt/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/react-backbone/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/react/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/reagent/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/riotjs/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/scalajs-react/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/serenadejs/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/somajs/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/somajs_require/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/spine/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/troopjs_require/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/typescript-angular/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/typescript-backbone/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/typescript-react/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/vanilla-es6/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/vanilladart/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/vanillajs/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/vue/node_modules" />
+    <handled-path value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/webrx/node_modules" />
+    <handled-path value="$PROJECT_DIR$/code/node_modules" />
+    <handled-path value="$PROJECT_DIR$/server/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="43" />
+    <option name="y" value="37" />
+    <option name="width" value="1240" />
+    <option name="height" value="712" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02backbone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02backbone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02backbone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02backbone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02backbone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02backbone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="学习" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="enabled" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="js.meteor.project" value="true" />
+    <property name="js.meteor.library.was.enabled" value="true" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="/usr/local/lib/node_modules/eslint" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/imgs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2cffd90-7d54-4454-9c1f-b702aa9848d7" name="Default" comment="" />
+      <created>1481159005403</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1481159005403</updated>
+      <workItem from="1481159007154" duration="1658000" />
+      <workItem from="1491837053682" duration="665000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2323000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="43" y="37" width="1240" height="712" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24856439" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/angular2/app/app.js" />
+        <option value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/angular2/app/bootstrap.js" />
+        <option value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/angular2/app/services/store.js" />
+        <option value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/typescript-react/js/constants.js" />
+        <option value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/typescript-react/js/utils.js" />
+        <option value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/typescript-react/js/todoModel.js" />
+        <option value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/typescript-angular/js/Application.js" />
+        <option value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/typescript-angular/js/Application.js.map" />
+        <option value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/typescript-backbone/js/app.js" />
+        <option value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/typescript-react/js/app.js" />
+        <option value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/typescript-react/js/todoItem.js" />
+        <option value="$PROJECT_DIR$/04todomvc/todomvc-master/examples/typescript-react/js/footer.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/01.md" />
+    <entry file="file://$PROJECT_DIR$/imgs/intro-model-view.svg" />
+    <entry file="file://$PROJECT_DIR$/imgs/intro-collections.svg" />
+    <entry file="file://$PROJECT_DIR$/imgs/intro-views.svg" />
+    <entry file="file://$PROJECT_DIR$/imgs/intro-routing.svg" />
+    <entry file="file://$PROJECT_DIR$/code/学习/01Collection.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,117 @@
+.shop-home{
+    background: #eeeeee;
+}
+
+.shop-home .view{
+
+}
+
+.shop-home .recommand{
+    text-align: center;
+    height:70px;
+    line-height: 70px;
+}
+
+.recommand{
+    font-size:30px;
+    color:#e60012;
+}
+.recommand .line{
+    width: 100px;
+    height: 4px;
+    vertical-align: middle;
+    background: linear-gradient( 90deg, #eee5e5, #e60012 );
+    display: inline-block;
+
+}
+.recommand .line.reverse{
+
+    background: linear-gradient( 90deg, #e60012,#eee5e5 );
+}
+.shop-home .logo{
+    display: inline-block;
+    width:113px;
+}
+
+
+.shop-home .bar{
+    height:92px;
+    line-height:92px;
+    background: #f9fdfc;
+
+}
+
+.shop-home .input-search{
+    display: inline-block;
+    width: 525px;
+    height: 50px;
+    border: 1px solid #b5b5b5;
+    border-radius: 50px;
+    overflow: hidden;
+    line-height: 50px;
+    text-align: center;
+    position:relative;
+    vertical-align: middle;
+}
+
+.input-search input{
+    width:100%;
+    height:100%;
+    font-size:24px;
+    color:#999999;
+    text-align: left;
+    outline-offset: 0;
+    outline:none;
+    padding:0 50px 0 22px;
+    box-sizing: border-box;
+}
+
+
+.shop-home .search{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.shop-home .good{
+    width:345px;
+    height:315px;
+    display: inline-block;
+    margin:0 6px 6px 0;
+    background: #ffffff;
+}
+
+.shop-home .goodsContainer{
+    text-align: center;
+}
+
+.shop-home .good{
+    padding-left:20px;
+    font-size:24px;
+    text-align: left;
+    padding-top:33px;
+}
+.shop-home .img{
+
+   height:176px;
+    width:307px;
+}
+
+.shop-home .name{
+
+    color:#333;
+    padding-top:8px;
+}
+
+.shop-home .title{
+    color:#666;
+    font-size:14px;
+    padding-top:8px;
+}
+
+.shop-home .price{
+    padding-top:12px;
+    color:#e60012;
+    font-size:30px;
+    font-weight:500;
+}

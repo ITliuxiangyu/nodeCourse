@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var h = `<div class="uni-blk-bt clearfix" data-sudaclick="blk_photo1">
+            <a class="uni-blk-pic" target="_blank" href="http://slide.news.sina.com.cn/c/slide_1_2841_105402.html" style="">
+            <img width="105" height="70" src="http://n.sinaimg.cn/mobileh5/20161122/eiPT-fxxwrwh4887478.jpg">
+            <img width="105" height="70" src="http://n.sinaimg.cn/fashion/20161114/mu6L-fxxsmif2961887.jpg" width="198" height="132" /> <span class="scroll-txt"></span>
+
+            <span>京昆高速56车相撞</span></a>
+
+
+
+
+            <a class="uni-blk-pic" target="_blank" href="http://slide.news.sina.com.cn/w/slide_1_2841_105417.html" style="margin-left:19px;">
+            <img width="105" height="70" src="http://n.sinaimg.cn/mobileh5/20161122/vmwU-fxxxauy0913572.jpg">
+            <span>日本地震车队撤离</span></a>
+
+            <a class="uni-blk-pic" target="_blank" href="http://slide.photo.sina.com.cn/" style="margin-left:19px;">
+            <img width="105" height="70" src="http://n.sinaimg.cn/sinanews/20161122/c5Fj-fxxwrwh4880893.jpg">
+            <span>她36秒KO男拳手</span></a></div>
+
+            <ul class="uni-blk-list02 list-a" style="padding-top:7px; _zoom:1;" data-sudaclick="blk_photo2">
+            <li><a target="_blank" href="http://slide.news.sina.com.cn/s/slide_1_2841_105403.html" class="liveNewsLeft photoNewsLeft">世界首条新能源空铁成都试跑</a> <a target="_blank" href="http://slide.news.sina.com.cn/w/slide_1_2841_105413.html">38斤纯金圣诞树开卖</a></li>
+
+    <li><a target="_blank" href="http://slide.news.sina.com.cn/s/slide_1_2841_105409.html" class="liveNewsLeft photoNewsLeft">小马云成名后被频合影</a> <a target="_blank" href="http://slide.news.sina.com.cn/w/slide_1_2841_105410.html">4岁女孩患病父亲怀里离世</a></li>
+
+    <li><a target="_blank" href="http://slide.news.sina.com.cn/s/slide_1_2841_105412.html" class="liveNewsLeft photoNewsLeft">邓文迪默多克离婚后首同框</a>  <a target="_blank" href="http://slide.news.sina.com.cn/s/slide_1_2841_105423.html">秘鲁APEC上的中国演员</a></li></ul>
+
+            <ul class="uni-blk-list02 list-a" data-sudaclick="blk_photo_fashion">
+            <ul class="uni-blk-list02 list-a" data-sudaclick="blk_photo_fashion">
+            <li><a class="photoNewsLeft linkRed01" target="_blank" href="http://slide.fashion.sina.com.cn/s/slide_24_80111_72839.html">章子怡穿深V裙大秀性感</a> <a target="_blank" href="http://slide.fashion.sina.com.cn/s/slide_24_74485_72838.html" class="linkRed01">维密天使莉莉素颜出镜</a></li>
+            </ul>
+            </ul>`;
+
+
+    h.replace(/<img.*src="(.*)".*?>/g, function (a, b) {
+        console.log([a, b])
+    })
+
+    var src = 'http://n.sinaimg.cn/default/d3f34f8d/20160421/creditchina.gif';
+    src.match(/[^\/]+$/)
+</script>
+
+</body>
+</html>

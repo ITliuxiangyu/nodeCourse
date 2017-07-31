@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    哈哈 我是express设置的静态文件
+</body>
+</html>
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $.ajax({
+        url:'http://localhost:3000',
+        method:'POST',
+        data:{
+            name:'zaq',
+            sex:'男'
+        },
+        success:function (data) {
+            console.log(data);
+        }
+
+    })
+</script>

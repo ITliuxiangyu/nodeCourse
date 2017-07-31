@@ -1,0 +1,57 @@
+.shop-car{
+    background: #eeeeee;
+    color:#333;
+}
+
+.shop-car .items{
+    background: #fff;
+    margin-bottom:10px;
+    position: relative;
+}
+
+.shop-car .radio{
+    margin:0 22px;
+}
+.shop-car .picUrl{
+    width:266px;
+    height:215px;
+    padding:16px 0;
+    vertical-align: middle;
+}
+
+    /*float: right;*/
+
+
+.shop-car .info{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left:40px;
+}
+
+.shop-car .name{
+    font-size:30px;
+}
+
+.shop-car .title{
+    font-size:18px;
+    margin-top:1em;
+}
+
+.shop-car .price
+{
+    margin-top:100px;
+}
+
+.shop-car .size
+{
+    font-size:24px;
+    color:#666;
+    padding-left:70px;
+}
+
+.shop-car .trash
+{
+     position: absolute;
+    right:38px;
+    bottom:35px;
+}

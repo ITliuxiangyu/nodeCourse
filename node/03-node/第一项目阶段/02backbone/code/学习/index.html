@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/underscore/underscore.js"></script>
+    <script src="../node_modules/backbone/backbone.js"></script>
+
+</head>
+<body>
+<div id="app">
+
+</div>
+
+<!--定义模板-->
+<script type="text/template" id="person-tpl">
+
+    <img style="width:200px;height:200px;" src="<%= avatar=>"/>
+    <div style="width:550px;display:inline-block">
+        <p><%= name %></p>
+        <p><%= integral %></p>
+    </div>
+
+</script>
+<script>
+    /***
+     * underScore是一个js工具集。
+     * @type {string}
+     */
+    //模板字符串
+  /*  var tpl = '你好<%= name %>';
+    //编译模板
+    compiledTpl = _.template('你好<%= name %>')
+
+    var data = {name:'川普'};
+    var resultStr = compiledTpl(data);
+    console.log(resultStr)*/
+
+
+     var tpl = `
+     <%_.each(items,function(item,i){%>
+        <li> <%= item.name %></li>
+     <%})%>
+     `;
+    //编译模板
+    compiledTpl = _.template(tpl)
+
+    var data = {items:[{name:'川普'},{name:'希拉里'},{name:'克林顿'}]};
+    var resultStr = compiledTpl(data);
+    console.log(resultStr)
+
+
+
+
+</script>
+</body>
+</html>

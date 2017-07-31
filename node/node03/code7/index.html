@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <button>请求</button>
+    </body>
+</html>
+<script src="../code5/jquery.js"></script>
+<script>
+    $('button').click(function () {
+        var url = "http://localhost:3000?myUrl=";
+        // 如果wyStr后面有查询参数, 需要进行url编码, 把&转成16进制符号
+//        encodeURIComponent()
+        var wyStr = "http://c.m.163.com/nc/article/headline/T1348647853363/0-140.html";
+        var urlStr = url + wyStr;
+        $.ajax({
+            url: urlStr,
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        });
+
+    });
+
+
+
+
+
+</script>

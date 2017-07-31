@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/underscore/underscore.js"></script>
+    <script src="../node_modules/backbone/backbone.js"></script>
+
+</head>
+<body>
+<div id="app">
+
+</div>
+
+<!--定义模板-->
+<script type="text/template" id="person-tpl">
+
+    <img style="width:200px;height:200px;" src="<%= avatar=>"/>
+    <div style="width:550px;display:inline-block">
+        <p><%= name %></p>
+        <p><%= integral %></p>
+    </div>
+
+</script>
+<script>
+    //创建一个模型
+    var Book = Backbone.Model.extend({
+        defaults: {
+            title: 'default'
+        },
+
+        initialize: function () { //alert('Hey, you create me!');
+        }
+    });
+
+    //创建一个集合
+    var BookShelf = Backbone.Collection.extend({
+        model: Book,
+        initialize:function(){
+            //数据请求完成的时候出发的时候
+          this.bind('reset',function(){
+              console.log('数据请求完成,。。。')
+          })
+            this.bind('add',function(){
+                console.log('数据添加,。。。')
+            })
+        },
+        url: 'books.json'
+        });
+
+    var book1 = new Book({title: 'js高程'});
+    var book2 = new Book({title: 'js中基指南'});
+
+    var bookShelf = new BookShelf();
+
+    //bookShelf.add(book1);
+    //bookShelf.fetch({reset: true});
+    bookShelf.fetch();
+
+</script>
+</body>
+</html>

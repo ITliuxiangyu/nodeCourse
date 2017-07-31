@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<h1>hello</h1>
+<img src="a.jpg">
+<button id="request">请求</button>
+<script>
+   /* function cb(data){
+        console.log('服务器返回的数据'+data);
+    }*/
+   /* document.body.onclick = function() {
+        /!**
+        * src是脚本的地址
+        * fn是服务器返回的数据
+        *
+         * function a(){  b();}
+         * function b(){}
+        * 服务器返回的是这样的内容:
+        *      cb({name:'zs'})
+        * @param src
+        * @param fn
+        *!/
+        function jsonp(src) {
+
+            //创建一个脚本标签。
+            var script = document.createElement('script');
+            script.src = src;
+
+            /!*script.onload = function () {
+                console.log('数据请求完成');
+
+            }*!/
+            document.body.appendChild(script);
+        }
+
+        jsonp('http://localhost/user.js');
+    }*/
+    /*
+    //ajax方式
+    $('#request').on('click',function(){
+        $.ajax({
+            url:'http://localhost/user.json',
+            success:function(data){
+                console.log(data);
+            }
+        })
+    })*/
+
+    //jsonp
+   //请求代理服务器,请求的参数url就是要代理的地址。加个jsonp,告诉后端走jsonp处理
+   var proxyUrl = 'http://image.baidu.com/search/acjson?tn=resultjson_com&ipn=rj&ct=201326592&is=&fp=result&queryWord=%E5%A4%B4%E5%83%8F&cl=2&lm=-1&ie=utf-8&oe=utf-8&adpicid=&st=-1&z=0&ic=0&word=%E5%A4%B4%E5%83%8F&s=0&se=&tab=&width=&height=&face=0&istype=2&qc=&nc=1&fr=&cg=head&pn=150&rn=30&gsm=78&1479972250018=';
+
+   proxyUrl = encodeURIComponent(proxyUrl)
+   var url = 'http://localhost:8000/jsonp?url='+proxyUrl;
+
+    $('#request').on('click',function(){
+        $.ajax({
+            url:url,
+            dataType:'jsonp',//告诉jquery,响应数据是形式是jsonp的形式。cb('data');
+            success:function(data){
+                console.log(data);
+            }
+        })
+    })
+</script>
+</body>
+</html>

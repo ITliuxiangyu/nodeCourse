@@ -1,0 +1,14 @@
+{
+  "name": "02npm",
+  "version": "1.0.0",
+  "description": "学习npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "node -v"
+  },
+  "author": "qingyun",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

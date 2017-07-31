@@ -1,0 +1,35 @@
+{
+  "carousel": [
+    {
+      "picUrl": "imgs/cuoural.png"
+    },
+    {
+      "picUrl": "imgs/shop3.png"
+    },
+    {
+      "picUrl": "imgs/pangxie.png"
+    }
+  ],
+  "name": "0琥珀核桃仁",
+  "title": "健脑 降低胆固醇 益寿美容",
+  "price": "38",
+  "srcPrice": "38",
+  "freight": 6,
+  "picUrl":"imgs/cuoural.png",
+  "sales": 1000,
+  "isSellout": false,
+  "store":100,
+  "unit": "件",
+  "info": {
+    "detail": " <div><span>详情...</span> <img src='imgs/shop-1.png'> <img src='imgs/shop-2.png'> <img src='imgs/pangxie.png'> </div> ",
+    "params": " <div><table><tr><td>类别</td><td>阳澄湖大闸蟹</td></tr><tr><td>口味</td><td>原汁原味</td></tr><tr><td>包装</td><td>包装盒</td></tr></table></div ",
+    "comments": [
+      {"name":"勇敢的心","avatar":"imgs/body.png","scores":4,"content":"不错，非常好。昨天早上下单，今天中午收到货，晚餐家人围坐在餐桌上品味阳澄湖大闸蟹的美味！新鲜、货真、价实！谢谢了！","timestamp":1480918939214},
+      {"name":"咿呀咿呀呦","avatar":"imgs/body.png","scores":5,"content":"不错，非常好。昨天早上下单，今天中午收到货，晚餐家人围坐在餐桌上品味阳澄湖大闸蟹的美味！新鲜、货真、价实！谢谢了！","timestamp":1480918939214},
+      {"name":"勇敢的心","avatar":"imgs/girl.png","scores":4,"content":"不错，非常好。昨天早上下单，今天中午收到货，晚餐家人围坐在餐桌上品味阳澄湖大闸蟹的美味！新鲜、货真、价实！谢谢了！","timestamp":1480918939214},
+      {"name":"勇敢的心","avatar":"imgs/body.png","scores":4,"content":"不错，非常好。昨天早上下单，今天中午收到货，晚餐家人围坐在餐桌上品味阳澄湖大闸蟹的美味！新鲜、货真、价实！谢谢了！","timestamp":1480918939214},
+      {"name":"勇敢的心","avatar":"imgs/girl.png","scores":4,"content":"不错，非常好。昨天早上下单，今天中午收到货，晚餐家人围坐在餐桌上品味阳澄湖大闸蟹的美味！新鲜、货真、价实！谢谢了！","timestamp":1480918939214}
+    ]
+
+  }
+}
